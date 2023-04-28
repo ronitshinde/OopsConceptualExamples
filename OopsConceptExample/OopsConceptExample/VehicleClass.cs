@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OopsConceptExample
 {
-    public class Vehicle   //Class : works as the blue print to create objects.
+    public class VehicleClass   //Class : works as the blue print to create objects.
     {
         public string color;   //Variable : It works as the type member/attribute of the class.
         public string brakeType; //All this variables are the Class level scope variables.

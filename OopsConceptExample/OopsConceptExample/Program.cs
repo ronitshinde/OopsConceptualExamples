@@ -10,7 +10,7 @@ namespace OopsConceptExample
     {
         static void Main(string[] args)
         {
-            Vehicle example = new Vehicle();  //Object : "example" is the object used to call the type members of the class.
+            VehicleClass example = new VehicleClass();  //Object : "example" is the object used to call the type members of the class.
             //Call First Method using "example" object.
             example.Drive("Buggati", "White");
             example.Drive("Ferrari", "Black");
