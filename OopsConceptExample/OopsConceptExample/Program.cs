@@ -51,19 +51,21 @@ namespace OopsConceptExample
                     return;
                 case 4:
                     //Calling overridden methods
+                    //1)Way to call overiding methods
                     ModernComputerSystems modern = new ModernComputerSystems();
                     modern.OperatingSystems();
-                    //modern.OperatingSystems("Windows");
-                    //modern.OperatingSystems(true);
-                    //modern.OperatingSystems(7, "Apple");
-                    //Console.WriteLine("Result in program.cs : " + modern.OperatingSystems(true));
+                    modern.OperatingSystems("Windows");
+                    modern.OperatingSystems(true);
+                    modern.OperatingSystems(7, "Apple");
+                    Console.WriteLine("Result in program.cs : " + modern.OperatingSystems(true));
+                    //2)Other way to call overiding methods
                     ComputerSystem systems = new ModernComputerSystems();
                     systems.OperatingSystems();
                     ComputerSystem com = new ComputerSystem();
                     com = new ModernComputerSystems();
                     com.OperatingSystems();
                     //Method hiding
-                   // modern.OperatingSystems(7, "Linux");
+                    modern.OperatingSystems(7, "Linux");
                     Console.ReadLine();
                     return;
             }
