@@ -11,7 +11,7 @@ namespace OopsConceptExample
         static void Main(string[] args)
         {
             Console.WriteLine("Select the concept");
-            Console.WriteLine("1.Object And Class\n2.Inheritance\n3.Method Overloading");
+            Console.WriteLine("1.Object And Class\n2.Inheritance\n3.Method Overloading\n4.Method Overridding");
             Console.Write("Enter the number : ");
             int count = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -47,6 +47,20 @@ namespace OopsConceptExample
                     system.OperatingSystems("Linux");
                     system.OperatingSystems(9, "Windows");
                     system.OperatingSystems("Windows", 9);
+                    Console.ReadLine();
+                    return;
+                case 4:
+                    //Calling overridden methods
+                    //1) Way to call overriding methods
+                    ModernComputerSystems modern = new ModernComputerSystems();
+                    modern.OperatingSystems();
+                    modern.OperatingSystems("Windows");
+                    modern.OperatingSystems(true);
+                    Console.WriteLine("Result in program.cs : " + modern.OperatingSystems(true));
+                    //2) Other way to call overriding methods
+                    ComputerSystem comp = new ComputerSystem();
+                    comp = new ModernComputerSystems();
+                    comp.OperatingSystems();
                     Console.ReadLine();
                     return;
             }
