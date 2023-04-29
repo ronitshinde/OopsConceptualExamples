@@ -59,5 +59,10 @@ namespace OopsConceptExample
             Console.WriteLine("Result : " + result);
             return base.OperatingSystems(result); //Calls the same method from base class -> overridden method
         }
+        public new void OperatingSystems(int points, string companyName) //Method hiding using new keyword
+        {
+            Console.WriteLine("This methods hides its counterpart in the base class");
+            Console.WriteLine($"Integer : {points} String : {companyName}");
+        }
     }
 }
