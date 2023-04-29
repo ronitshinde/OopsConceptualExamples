@@ -11,7 +11,7 @@ namespace OopsConceptExample
         static void Main(string[] args)
         {
             Console.WriteLine("Select the concept");
-            Console.WriteLine("1.Object And Class\n2.Inheritance");
+            Console.WriteLine("1.Object And Class\n2.Inheritance\n3.Method Overloading");
             Console.Write("Enter the number : ");
             int count = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -38,6 +38,16 @@ namespace OopsConceptExample
                     routes.Transport("SHORTER");
                     Console.WriteLine();
                     Console.ReadKey();
+                    return;
+                case 3:
+                    //Calling overloaded methods
+                    ComputerSystem system = new ComputerSystem();
+                    system.OperatingSystems();
+                    system.OperatingSystems(true);
+                    system.OperatingSystems("Linux");
+                    system.OperatingSystems(9, "Windows");
+                    system.OperatingSystems("Windows", 9);
+                    Console.ReadLine();
                     return;
             }
         }
