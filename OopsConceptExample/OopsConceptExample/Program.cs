@@ -80,8 +80,10 @@ namespace OopsConceptExample
                 case 6:
                     Calculation math = new Calculation();
                     math.Algebra(7, 5, "Pythagoras");
+                    Console.WriteLine("Multiplication : " + math.Algebra(7, 5, "Pythagoras"));
                     math.Geometry();
                     math.Algebra(4, 8, "Isoceles");
+                    Console.WriteLine("Multiplication : " + math.Algebra(4, 8, "Isoceles"));
                     math.Geometry();
                     Console.ReadLine();
                     return;
