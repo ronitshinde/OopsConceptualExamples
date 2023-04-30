@@ -11,7 +11,7 @@ namespace OopsConceptExample
         static void Main(string[] args)
         {
             Console.WriteLine("Select the concept");
-            Console.WriteLine("1.Object And Class\n2.Inheritance\n3.Method Overloading\n4.Method Overridding");
+            Console.WriteLine("1.Object And Class\n2.Inheritance\n3.Method Overloading\n4.Method Overridding\n5.Encapsulation");
             Console.Write("Enter the number : ");
             int count = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -66,6 +66,14 @@ namespace OopsConceptExample
                     com.OperatingSystems();
                     //Method hiding
                     modern.OperatingSystems(7, "Linux");
+                    Console.ReadLine();
+                    return;
+                case 5:
+                    BooksType encapsulation = new BooksType();
+                    encapsulation.Novel = "The Yogi";
+                    encapsulation.Comics = "Seven Musketers";
+                    encapsulation.Rating = 9;
+                    encapsulation.NovelMethod();
                     Console.ReadLine();
                     return;
             }
