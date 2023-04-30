@@ -12,7 +12,7 @@ namespace OopsConceptExample
         {
             Console.WriteLine("Select the concept");
             Console.WriteLine("1.Object And Class\n2.Inheritance\n3.Method Overloading\n4.Method Overridding" +
-                "\n5.Encapsulation\n6.Abstraction");
+                "\n5.Encapsulation\n6.Abstraction\n7.MethodTypes");
             Console.Write("Enter the number : ");
             int count = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -86,6 +86,14 @@ namespace OopsConceptExample
                     Console.WriteLine("Multiplication : " + math.Algebra(4, 8, "Isoceles"));
                     math.Geometry();
                     Console.ReadLine();
+                    return;
+                case 7:
+                    HumanEvolutionAges ages = new HumanEvolutionAges();
+                    ages.Paleolithic();
+                    ages.Mesolithic("10000 BC", "8000 BC");
+                    ages.Neolithic("8000 BC", "3000 BC",3000);
+                    ages.BronzeAge();
+                    Console.ReadLine() ;
                     return;
             }
         }
