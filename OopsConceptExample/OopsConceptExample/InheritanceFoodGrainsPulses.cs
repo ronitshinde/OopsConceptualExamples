@@ -54,4 +54,20 @@ namespace OopsConceptExample
             Console.WriteLine("Bajra is consumed in areas of : " + grains);
         }
     }
+    //Hybrid Inheritance
+    //These is a combination of multilevel and hierarchical inheritance
+    public class Oats : Jowar //Jowar is a hierarchial inherited class
+    {
+        public void OatsVariety()
+        {
+            Console.WriteLine("This is a hybrid inherited Class Oats");
+        }
+    }
+    public class Rye : Jowar //Jowar is a hierarchial inherited class
+    {
+        public void RyeVariety()
+        {
+            Console.WriteLine("This is a hybrid inherited Class Rye");
+        }
+    }
 }

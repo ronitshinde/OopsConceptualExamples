@@ -115,11 +115,17 @@ namespace OopsConceptExample
                     Rice variety = new Rice();
                     variety.RiceVariety("Basmati");
                     variety.FoodGrains("Bengal gram");
-                    Console.WriteLine("This is hybrid level inheritance");
-                    Console.WriteLine("==================================");
                     Bajra bajra = new Bajra();
                     bajra.BajraVariety("Vidharba");
                     bajra.FoodGrains("Moong");
+                    Console.WriteLine("This is hybrid level inheritance");
+                    Console.WriteLine("==================================");
+                    Oats oats = new Oats();
+                    oats.OatsVariety();
+                    oats.JowarVariety();
+                    Rye rye = new Rye();
+                    rye.RyeVariety();
+                    rye.FoodGrains("Tur");
                     Console.ReadLine();
                     return;
             }
