@@ -47,6 +47,7 @@
     <Compile Include="BooksType.cs" />
     <Compile Include="HeavyVehicles.cs" />
     <Compile Include="HumanEvolutionAges.cs" />
+    <Compile Include="InheritanceFoodGrainsPulses.cs" />
     <Compile Include="Mathematics.cs" />
     <Compile Include="VehicleClass.cs" />
     <Compile Include="Program.cs" />
