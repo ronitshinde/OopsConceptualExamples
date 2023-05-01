@@ -12,7 +12,7 @@ namespace OopsConceptExample
         {
             Console.WriteLine("Select the concept");
             Console.WriteLine("1.Object And Class\n2.Inheritance\n3.Method Overloading\n4.Method Overridding" +
-                "\n5.Encapsulation\n6.Abstraction\n7.MethodTypes\n8.SingleLevelInheritance");
+                "\n5.Encapsulation\n6.Abstraction\n7.MethodTypes\n8.Inheritance");
             Console.Write("Enter the number : ");
             int count = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -91,15 +91,23 @@ namespace OopsConceptExample
                     HumanEvolutionAges ages = new HumanEvolutionAges();
                     ages.Paleolithic();
                     ages.Mesolithic("10000 BC", "8000 BC");
-                    ages.Neolithic("8000 BC", "3000 BC",3000);
+                    ages.Neolithic("8000 BC", "3000 BC", 3000);
                     ages.BronzeAge();
-                    Console.ReadLine() ;
+                    Console.ReadLine();
                     return;
                 case 8:
+                    Console.WriteLine("This is single level inheritance");
+                    Console.WriteLine("==================================");
                     Wheat grainPulses = new Wheat();
                     grainPulses.Pulses();
                     grainPulses.FoodGrains(grainPulses.gram);
-                    Console.ReadLine() ;
+                    Console.WriteLine("This is multi level inheritance");
+                    Console.WriteLine("==================================");
+                    Jowar pulseGrain = new Jowar();
+                    pulseGrain.JowarVariety();
+                    pulseGrain.FoodGrains(pulseGrain.gram);
+                    pulseGrain.Pulses();
+                    Console.ReadLine();
                     return;
             }
         }
