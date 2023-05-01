@@ -12,7 +12,7 @@ namespace OopsConceptExample
         {
             Console.WriteLine("Select the concept");
             Console.WriteLine("1.Object And Class\n2.Inheritance\n3.Method Overloading\n4.Method Overridding" +
-                "\n5.Encapsulation\n6.Abstraction\n7.MethodTypes\n8.Inheritance");
+                "\n5.Encapsulation\n6.Abstraction\n7.MethodTypes\n8.Single and Mulit level Inheritance\n9.Heirarchial And Hybrid Level Inheritance");
             Console.Write("Enter the number : ");
             int count = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine();
@@ -107,6 +107,19 @@ namespace OopsConceptExample
                     pulseGrain.JowarVariety();
                     pulseGrain.FoodGrains(pulseGrain.gram);
                     pulseGrain.Pulses();
+                    Console.ReadKey();
+                    return;
+                case 9:
+                    Console.WriteLine("This is heirarchial level inheritance");
+                    Console.WriteLine("==================================");
+                    Rice variety = new Rice();
+                    variety.RiceVariety("Basmati");
+                    variety.FoodGrains("Bengal gram");
+                    Console.WriteLine("This is hybrid level inheritance");
+                    Console.WriteLine("==================================");
+                    Bajra bajra = new Bajra();
+                    bajra.BajraVariety("Vidharba");
+                    bajra.FoodGrains("Moong");
                     Console.ReadLine();
                     return;
             }

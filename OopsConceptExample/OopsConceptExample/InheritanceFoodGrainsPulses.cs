@@ -9,7 +9,7 @@ namespace OopsConceptExample
     //Single Level Inheritance
     public class InheritanceFoodGrainsPulses
     {
-        public string grains = "Wheat";
+        public string grains;
         public void FoodGrains(string pulses)
         {
             Console.WriteLine("Food grains are an integral part of human diet");
@@ -25,15 +25,33 @@ namespace OopsConceptExample
             Console.WriteLine("Pulses are rich in protein");
         }
     }
-   //Multilevel Inheritance
-   public class Jowar : Wheat
-    { 
+    //Multilevel Inheritance
+    public class Jowar : Wheat
+    {
         //object of these class can be used to call methods and variables from both the classes
-            public void JowarVariety()
+        public void JowarVariety()
         {
             //variables from both the classes are called in this method
             Console.WriteLine("This is the multilevel inheritance");
             Console.WriteLine($"{grains} and {gram} are the mostly consumed staple in Maharashtra");
+        }
+    }
+    //Hierarchial Inheritance
+    //Both classes inherit from the same base class
+    public class Rice : InheritanceFoodGrainsPulses
+    {
+        public void RiceVariety(string riceType)
+        {
+            grains = riceType;
+            Console.WriteLine("This quality of rice is mostly consumed in western maharashtra : " + grains);
+        }
+    }
+    public class Bajra : InheritanceFoodGrainsPulses
+    {
+        public void BajraVariety(string area)
+        {
+            grains = area;
+            Console.WriteLine("Bajra is consumed in areas of : " + grains);
         }
     }
 }
